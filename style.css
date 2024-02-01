@@ -1,0 +1,221 @@
+body {
+    max-width: 1440px;
+    background: lightgray;
+    margin: 0; /* Pour éviter les marges par défaut du body */
+    color: black; /* Couleur du texte pour une meilleure lisibilité sur le fond sombre */
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: gray;
+    padding: 10px;
+    margin-right: 20px;
+    width: 100px; /* Ajout de 20px à la largeur */
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2; /* Assure que le bouton est au-dessus du menu */
+}
+
+.bar {
+    width: 70px;
+    height: 3px;
+    background-color: gold;
+    margin: 6px 0;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Ajout d'une couleur de fond pour le menu */
+}
+
+.menu-list.show-menu {
+    max-height: 200px; /* ou la hauteur que tu veux */
+}
+
+.menu-list li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.logoZino
+{
+    width: 150px;
+}
+.navigation
+{
+    font-size: 30px;
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+}
+.description {
+    margin-left: 50px;
+}
+.description h2 {
+    font-size: 50px;
+}
+.description h3 {
+    font-size: 30px;
+}
+.description p {
+    width: 500px;
+    font-size: 20px;
+}
+.zinoProfil {
+    border-radius: 100px;
+    border: 2px grey solid;
+}
+.APropos {
+    display: flex;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.APropos h2 {
+    font-size: 50px;
+}
+.APropos p {
+    font-size: 20px;
+}
+.proposContent {
+    width: 500px;
+}
+.proposContent h2 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.service {
+
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.service h2 {
+    font-size: 50px;
+    display: flex;
+
+}
+.serviceContent
+{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+.création
+{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: gray;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.création h3
+{
+margin-bottom: 40px;
+}
+.seo
+{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: gray;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.maintenance
+{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: gray;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.creationImg {
+    margin-left: 35%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.seoImg {
+    margin-left: 35%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.maintenanceImg {
+    margin-left: 35%;
+    width: 100px;
+}
+.mesProjets {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mesProjets  h2 {
+    display: flex;
+
+    font-size: 50px;
+    margin-left: 50px;
+}
+.p1 {
+    width: 700px;
+    height: 500px;
+    margin-bottom: 300px;
+}
+.p1 img {
+    width: 700px;
+    height: 500px;
+}
+
+.p2 img{
+    width: 700px;
+    height: 500px;
+}
+.p3 img{
+    width: 700px;
+    height: 500px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
