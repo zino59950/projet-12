@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portfolio DREF Zinédine</title>
 </head>
 <body>
     <header>
@@ -21,6 +21,7 @@
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">À propos</a></li>
                 <li><a href="#">Services</a></li>
+                <li><a href="#">Mes Projets</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -29,7 +30,7 @@
     <main>
         <div class="description">
             <img src="zino bonnet.PNG" alt="zinoProfil" class="zinoProfil">
-            <h2>Dref Zinédine</h2>
+            <h2>DREF Zinédine</h2>
             <h3>Intégrateur web</h3>
             <p>
                 Salut ! Je suis un jeune de 23 ans, passionné par le développement web, l'UI/UX et l'accessibilité. 
@@ -37,9 +38,13 @@
                 je suis déterminé à approfondir mes compétences et à me perfectionner dans le monde fascinant de la création web.
             </p>
         </div>
+        <div class="titrePropos">
+            <h2>A propos</h2> 
+        </div>
+
         <div class="APropos">
+            
             <div class="proposContent">
-                <h2>A propos</h2>
                 <p>
                     Au cours de ma formation, j'explore différentes facettes du développement web pour développer une solide compréhension des technologies front-end. Mon intérêt particulier pour l'UI/UX et 
                     l'accessibilité me motive à trouver des solutions innovantes pour rendre le web plus convivial et inclusif.
@@ -95,29 +100,62 @@
         </div>
         <div class="mesProjets">
             <h2>Mes Projets</h2>
-
-            <div class="p1">
-                <h3>
-                    Oh My Food
-                </h3>
-                <img src="myfood.png" alt="">
+                <div class="p1">
+                    <a href="https://zino59950.github.io/projet4/">
+                        <h3>Oh My Food</h3>
+                        <img src="myfood.png" alt="">
+                        <p>
+                            Alors voilà, l'idée, c'est de créer un site super pratique, surtout pour les utilisateurs mobiles, où on peut trouver tous les menus des restaurants gastronomiques. Et c'est pas tout ! 
+                            On va pas se limiter aux réservations classiques, on va plus loin. 
+                            Les clients pourront carrément composer leur propre menu avant même d'arriver au resto. Comme ça, les plats seront prêts dès qu'ils mettront les pieds dans le resto. 
+                            Fini les attentes interminables au resto, on optimise tout ça
+                        </p>
+                    </a>
+                </div>
+                
+                <div class="p2">
+                    <a href="https://zino59950.github.io/Projet9/">
+                        <h3>Nina Carducci</h3>
+                        <img src="nina.png" alt="">
+                        <p>
+                            Alors, en tant que développeur freelance, j'ai décidé d'élargir un peu mes horizons en proposant mes compétences en optimisation SEO à de nouveaux clients. 
+                            J'ai pris le temps d'analyser plusieurs sites internet, histoire de repérer ceux qui pourraient vraiment bénéficier d'une petite amélioration côté référencement. Et devine quoi ? J'ai mis la main sur le site de Nina Carducci, 
+                            une photographe, grâce à un tuyau d'un de mes potes. 
+                            Alors, j'ai décidé de la contacter pour lui proposer mes services. On a tous à y gagner, non ?
+                        </p>
+                    </a>
+                </div>
+            
+                <div class="p3">
+                    <a href="https://zino59950.github.io/Projet_5_js/">
+                        <h3>Sprint It</h3>
+                        <img src="sprint it.png" alt="">
+                        <p>
+                            Alors voilà, en tant que développeur front-end freelance, 
+                            je me lance dans un nouveau projet excitant avec Print It, 
+                            une petite imprimerie familiale. J'ai reçu mon premier mail de Lucien, le directeur, et maintenant, 
+                            après avoir mis en place la navigation dans le carrousel, il est temps d'ajouter les images pour dynamiser leur site Internet statique.
+                            Lorsqu'on clique sur la flèche droite, on va changer le point actif, mettre à jour l'image et ajuster le texte correspondant. 
+                            Et bien sûr, on fait la même chose en sens inverse quand la flèche gauche est cliquée.
+                        </p>
+                    </a>
+                </div>
             </div>
-            <div class="p2">
-                <h3>
-                    Oh My Food
-                </h3>
-                <img src="nina.png" alt="">
-            </div>
-            <div class="p3">
-                <h3>
-                    Oh My Food
-                </h3>
-                <img src="myfood.png" alt="">
-            </div>
+            
 
         </div>
     </main>
     <footer>
+        <div class="footerContent">
+            <button class="collapsible" onclick="toggleCollapsible(0)">Me contacter</button>
+            <div class="content">
+                <p><a href="mailto:votre@email.com">zinedinedref20@gmail.com</a></p>
+            </div>
+            <button class="collapsible" onclick="toggleCollapsible(1)">Git Hub</button>
+            <div class="content">
+                <p><a href="https://github.com/zino59950/">https://github.com/zino59950/</a></p>
+            </div>
+        </div>
         <img src="zino-removebg-preview.png" alt="logoZino" class="logoZino">
     </footer>
     <script src="script.js"></script>

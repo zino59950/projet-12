@@ -81,6 +81,7 @@ header
 }
 .description {
     margin-left: 50px;
+    
 }
 .description h2 {
     font-size: 50px;
@@ -104,6 +105,10 @@ header
     margin-right: 50px;
     justify-content: center;
     margin-bottom: 50px;
+}
+.titrePropos {
+    font-size: 30px;
+    margin-left: 50px;
 }
 .APropos h2 {
     font-size: 50px;
@@ -188,6 +193,7 @@ margin-bottom: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 50px;
 }
 .mesProjets  h2 {
     display: flex;
@@ -204,18 +210,68 @@ margin-bottom: 40px;
     width: 700px;
     height: 500px;
 }
-
+.p1 p{
+    background-color:white ;
+    width: 700px;
+}
 .p2 img{
     width: 700px;
     height: 500px;
+}
+.p2 p{
+    background-color:white ;
+    width: 700px;
 }
 .p3 img{
     width: 700px;
     height: 500px;
 }
+.p3 p{
+    background-color:white ;
+    width: 700px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+        footer {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center; /* Ajout de cet alignement */
+        }
 
-footer {
-    background-color: black;
+        .collapsible {
+            display: flex;
+            justify-content: center;
+            width: 150px;
+            border-radius: 20px;
+            background-color: rgb(44, 43, 43);
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            height: 50px;
+            margin-bottom: 10px; /* Ajout de cette marge */
+        }
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            width: 100%; /* Ajout de cette largeur */
+            padding: 18px;
+            background-color: black;
+            color: white;
+            box-sizing: border-box; /* Ajout pour inclure les paddings dans la taille totale */
+        }
+
+.footerContent {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
 }
