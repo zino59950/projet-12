@@ -11,7 +11,7 @@ body {
     background-color: gray;
     padding: 10px;
     margin-right: 20px;
-    width: 100px; /* Ajout de 20px à la largeur */
+    width: 130px; 
 }
 
 .menu-button {
@@ -46,11 +46,12 @@ body {
 }
 
 .menu-list.show-menu {
-    max-height: 200px; /* ou la hauteur que tu veux */
+    max-height: 300px; /* ou la hauteur que tu veux */
+    width: 150px;
 }
 
 .menu-list li {
-    margin: 10px 0;
+    margin: 5px;
     display: flex;
     justify-content: center;
     height: 50px;
@@ -97,6 +98,23 @@ header
     border-radius: 100px;
     border: 2px grey solid;
 }
+.bouton {
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-left: 60px;
+    padding: 10px;
+    width: 100px;
+    max-height: 50px;
+    background-color: grey;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Ajoute une transition pour une animation plus douce */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre initiale */
+}
+
+.bouton:hover {
+    background-color: #555; /* Nouvelle couleur au survol */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
+}
+
 .APropos {
     display: flex;
     background-color: grey;
@@ -105,7 +123,14 @@ header
     margin-right: 50px;
     justify-content: center;
     margin-bottom: 50px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Ajoute une transition pour une animation plus douce */
 }
+
+.APropos:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre légère au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
 .titrePropos {
     font-size: 30px;
     margin-left: 50px;
@@ -143,37 +168,55 @@ header
   margin-right: 10px;
   justify-content: space-around;
 }
-.création
-{
+.création {
     border-radius: 20px;
     padding: 10px;
     background-color: gray;
     width: 500px;
     margin-left: 10px;
     margin-right: 10px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Ajoute une transition pour une animation plus douce */
 }
+
+.création:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre légère au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
 .création h3
 {
 margin-bottom: 40px;
 }
-.seo
-{
+.seo {
     border-radius: 20px;
     padding: 10px;
     background-color: gray;
     width: 500px;
     margin-left: 10px;
     margin-right: 10px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Ajoute une transition pour une animation plus douce */
 }
-.maintenance
-{
+
+.seo:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre légère au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+.maintenance {
     border-radius: 20px;
     padding: 10px;
     background-color: gray;
     width: 500px;
     margin-left: 10px;
     margin-right: 10px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Ajoute une transition pour une animation plus douce */
 }
+
+.maintenance:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre légère au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
 
 .creationImg {
     margin-left: 35%;
@@ -189,12 +232,31 @@ margin-bottom: 40px;
     margin-left: 35%;
     width: 100px;
 }
-.mesProjets {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 50px;
+.mesProjets
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+/* Ajoutez le CSS suivant à votre feuille de style */
+
+/* Ajoutez le CSS suivant à votre feuille de style */
+
+.mesProjets .p1 p,
+.mesProjets .p2 p,
+.mesProjets .p3 p {
+    opacity: 0; /* Initialise l'opacité à 0 */
+    transition: opacity 0.3s; /* Ajoute une transition pour une animation douce */
+}
+
+.mesProjets .p1:hover p,
+.mesProjets .p2:hover p,
+.mesProjets .p3:hover p {
+    opacity: 1; /* Rend l'élément <p> complètement visible au survol */
+}
+
+
 .mesProjets  h2 {
     display: flex;
 
@@ -211,14 +273,17 @@ margin-bottom: 40px;
     height: 500px;
 }
 .p1 p{
+    margin-top: 0px;
     background-color:white ;
     width: 700px;
+    height:auto;
 }
 .p2 img{
     width: 700px;
     height: 500px;
 }
 .p2 p{
+    margin-top: 0px;
     background-color:white ;
     width: 700px;
 }
@@ -227,6 +292,7 @@ margin-bottom: 40px;
     height: 500px;
 }
 .p3 p{
+    margin-top: 0px;
     background-color:white ;
     width: 700px;
 }
@@ -269,9 +335,114 @@ a {
             color: white;
             box-sizing: border-box; /* Ajout pour inclure les paddings dans la taille totale */
         }
+.competences {
+    margin-left: 50px;
+}
+.competences h2{
+
+    font-size: 50px;
+}
+
+.competencesContent {
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 1440px;
+    margin-right: 50px;
+    height: 100px;
+    background-color: grey;
+    transition: box-shadow 0.3s, transform 0.3s; /* Ajoute une transition pour une animation plus douce */
+}
+
+.competencesContent:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre légère au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+
+
+
+
+
 
 .footerContent {
     display: flex;
     flex-direction: column;
 
+}
+@media screen and (max-width: 600px) {
+        .proposContent
+    {
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    }
+
+    .boutonContent
+    {
+    display: flex;
+    flex-direction: column;
+    }
+    .bouton
+    {
+        display: flex;
+        justify-content: center;
+    margin-bottom: 25px;
+    margin-left: 0%;
+    }
+}
+@media screen and (max-width: 880px) {
+    .description
+{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+    .description p
+{
+  max-width: 500px;
+  font-size: 20px;
+  width: 100%;
+}
+.titrePropos
+{
+    margin-left: 0px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+    .serviceContent
+    {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .création
+{
+  margin-bottom: 50px;
+  max-width: 500px;
+  width: 100%;
+}
+.seo
+{
+  margin-bottom: 50px;
+  max-width: 500px;
+  width: 100%;
+}
+.maintenance
+{
+    max-width: 500px;
+    width: 100%;
+}
+.competencesContent
+{
+  height: auto;
+}
+.mesProjets h2
+{
+  margin-left: 0px;
+}
 }

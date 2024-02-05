@@ -18,17 +18,18 @@
                 <div class="bar"></div>
             </div>
             <ul class="menu-list" id="menuList">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
+                <li><a href="#description">description</a></li>
+                <li><a href="#titrePropos">À propos</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Mes Projets</a></li>
+                <li><a href="#">Mes Compétences</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </header>
     
     <main>
-        <div class="description">
+        <div class="description"id="description">
             <img src="zino bonnet.PNG" alt="zinoProfil" class="zinoProfil">
             <h2>DREF Zinédine</h2>
             <h3>Intégrateur web</h3>
@@ -37,8 +38,14 @@
                 Actuellement en formation en tant qu'intégrateur web chez Openclassroom, 
                 je suis déterminé à approfondir mes compétences et à me perfectionner dans le monde fascinant de la création web.
             </p>
+            <div class="boutonContent">
+                <a href="mailto:zinedinedref20@gmail.com" class="bouton">Me Contacter</a>
+
+
+                <a href="https://github.com/zino59950" class="bouton" target="_blank">GitHub</a>
+            </div>
         </div>
-        <div class="titrePropos">
+        <div class="titrePropos"id="titrePropos">
             <h2>A propos</h2> 
         </div>
 
@@ -51,7 +58,7 @@
                 </p>   
             </div>
         </div>
-        <div class="service">
+        <div class="service" id="service">
             <h2>Mes services</h2>
             <div class="serviceContent">
                 <div class="création">
@@ -98,12 +105,12 @@
                 </div>
             </div>
         </div>
-        <div class="mesProjets">
+        <div class="mesProjets" id="mesProjets">
             <h2>Mes Projets</h2>
                 <div class="p1">
                     <a href="https://zino59950.github.io/projet4/">
                         <h3>Oh My Food</h3>
-                        <img src="myfood.png" alt="">
+                        <img src="myfood.png" alt="restaurants gastronomiques">
                         <p>
                             Alors voilà, l'idée, c'est de créer un site super pratique, surtout pour les utilisateurs mobiles, où on peut trouver tous les menus des restaurants gastronomiques. Et c'est pas tout ! 
                             On va pas se limiter aux réservations classiques, on va plus loin. 
@@ -116,7 +123,7 @@
                 <div class="p2">
                     <a href="https://zino59950.github.io/Projet9/">
                         <h3>Nina Carducci</h3>
-                        <img src="nina.png" alt="">
+                        <img src="nina.png" alt="le site de Nina Carducci">
                         <p>
                             Alors, en tant que développeur freelance, j'ai décidé d'élargir un peu mes horizons en proposant mes compétences en optimisation SEO à de nouveaux clients. 
                             J'ai pris le temps d'analyser plusieurs sites internet, histoire de repérer ceux qui pourraient vraiment bénéficier d'une petite amélioration côté référencement. Et devine quoi ? J'ai mis la main sur le site de Nina Carducci, 
@@ -129,7 +136,7 @@
                 <div class="p3">
                     <a href="https://zino59950.github.io/Projet_5_js/">
                         <h3>Sprint It</h3>
-                        <img src="sprint it.png" alt="">
+                        <img src="sprint it.png" alt="une petite imprimerie familiale">
                         <p>
                             Alors voilà, en tant que développeur front-end freelance, 
                             je me lance dans un nouveau projet excitant avec Print It, 
@@ -140,22 +147,53 @@
                         </p>
                     </a>
                 </div>
-            </div>
-            
+            </div>    
+        </div>
+        <div class="competences" id="competences">
+            <h2>Mes Compétences</h2>
+            <div>
+                <div class="competencesContent">
+                    <h3>
+                        Maîtrise du HTML/CSS : 
+                    </h3>
+                    <p>
+                        Expertise solide dans la création et 
+                        la structuration de pages web en utilisant les langages HTML et CSS, 
+                        assurant une présentation visuelle attrayante et une navigation fluide.
+                    </p>
+                </div>
+                <div class="competencesContent">
+                    <h3>
+                        Conception adaptative (Responsive Design) 
+                    </h3>
+                    <p>
+                        Capacité à concevoir des sites web réactifs qui offrent une expérience utilisateur optimale sur divers appareils,
+                         garantissant une accessibilité maximale.
+                    </p>
+                </div>
+                <div class="competencesContent">
+                    <h3>
+                        JavaScript Interactif : 
+                    </h3>
+                    <p>
+                        Utilisation compétente de JavaScript pour ajouter des fonctionnalités interactives et dynamiques, 
+                        permettant une interactivité accrue et une expérience utilisateur améliorée.
+                    </p>
+                </div>
+                <div class="competencesContent">
+                    <h3>
+                        Gestion de la Compatibilité des Navigateurs :
+                    </h3>
+                    <p>
+                        Expertise dans la résolution de problèmes de compatibilité entre navigateurs, 
+                        assurant une consistance et une fonctionnalité optimale quel que soit le navigateur utilisé.
+                    </p>
+                </div>
 
+            </div>
         </div>
     </main>
     <footer>
-        <div class="footerContent">
-            <button class="collapsible" onclick="toggleCollapsible(0)">Me contacter</button>
-            <div class="content">
-                <p><a href="mailto:votre@email.com">zinedinedref20@gmail.com</a></p>
-            </div>
-            <button class="collapsible" onclick="toggleCollapsible(1)">Git Hub</button>
-            <div class="content">
-                <p><a href="https://github.com/zino59950/">https://github.com/zino59950/</a></p>
-            </div>
-        </div>
         <img src="zino-removebg-preview.png" alt="logoZino" class="logoZino">
     </footer>
     <script src="script.js"></script>
