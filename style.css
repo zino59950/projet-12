@@ -1,5 +1,4 @@
 body {
-    max-width: 1440px;
     background: lightgray;
     margin: 0; /* Pour éviter les marges par défaut du body */
     color: black; /* Couleur du texte pour une meilleure lisibilité sur le fond sombre */
@@ -300,42 +299,23 @@ a {
     color: inherit;
     text-decoration: none;
 }
-        footer {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center; /* Ajout de cet alignement */
-        }
+footer {
+     background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Ajout de cet alignement */
+}
 
-        .collapsible {
-            display: flex;
-            justify-content: center;
-            width: 150px;
-            border-radius: 20px;
-            background-color: rgb(44, 43, 43);
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            text-align: left;
-            border: none;
-            outline: none;
-            font-size: 15px;
-            height: 50px;
-            margin-bottom: 10px; /* Ajout de cette marge */
-        }
 
-        .content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            width: 100%; /* Ajout de cette largeur */
-            padding: 18px;
-            background-color: black;
-            color: white;
-            box-sizing: border-box; /* Ajout pour inclure les paddings dans la taille totale */
-        }
-.competences {
+
+
+.competences
+{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     margin-left: 50px;
 }
 .competences h2{
