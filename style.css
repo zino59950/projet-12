@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     background: lightgray;
     margin: 0; /* Pour éviter les marges par défaut du body */
     color: black; /* Couleur du texte pour une meilleure lisibilité sur le fond sombre */
