@@ -374,6 +374,10 @@ footer {
     }
 }
 @media screen and (max-width: 880px) {
+    .zinoProfil
+{
+  margin-right: 175px;
+}
     .description
 {
   display: flex;
