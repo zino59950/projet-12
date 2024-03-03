@@ -1,8 +1,8 @@
 body {
     width: 100%;
     background: lightgray;
-    margin: 0; /* Pour éviter les marges par défaut du body */
-    color: black; /* Couleur du texte pour une meilleure lisibilité sur le fond sombre */
+    margin: 0; 
+    color: black; 
 }
 .menu-container {
     display: flex;
@@ -265,46 +265,93 @@ margin-bottom: 40px;
 }
 .p1 {
     width: 100%;
-    margin-bottom: 300px;
-    padding: 20px;
+    padding: 50px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
   }
-.p1 img {
+  .p1 img {
     width: 100%;
+    max-width: 1000px;
+    border-radius: 50px;
+    border: 5px solid grey;
+    transition: transform 0.3s, box-shadow 0.3s; /* Ajout de transitions pour une animation fluide */
 }
+
+.p1 img:hover {
+    transform: scale(1.05); /* Grossissement de l'image au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au survol */
+}
+
 .p1 p{
-    margin-top: 0px;
+    margin-top: 15px;
     background-color: white;
     width: 100%;
+    max-width: 1000px;
+    padding: 10px; /* Ajout de padding */
+    box-sizing: border-box; /* Permet d'inclure le padding dans la taille totale */
+    border-radius: 20px;
+    border: 5px solid grey;
 }
-.p2 {
+.p1 p:hover {
+    transform: scale(1.05); /* Grossissement de l'image au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au survol */
+}
+.p2 img {
     width: 100%;
-    margin-bottom: 300px;
-    padding: 20px;
-    box-sizing: border-box;
+    max-width: 1000px;
+    border-radius: 50px;
+    border: 5px solid grey;
+    transition: transform 0.3s, box-shadow 0.3s; /* Ajout de transitions pour une animation fluide */
 }
-.p2 img{
-    width: 100%;
+
+.p2 img:hover {
+    transform: scale(1.05); /* Grossissement de l'image au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au survol */
 }
+
 .p2 p{
-    margin-top: 0px;
+    margin-top: 15px;
     background-color: white;
     width: 100%;
+    max-width: 1000px;
+    padding: 10px; /* Ajout de padding */
+    box-sizing: border-box; /* Permet d'inclure le padding dans la taille totale */
+    border-radius: 20px;
+    border: 5px solid grey;
 }
-.p3 {
+.p2 p:hover {
+    transform: scale(1.05); /* Grossissement de l'image au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au survol */
+}
+.p3 img {
     width: 100%;
-    margin-bottom: 300px;
-    padding: 20px;
-    box-sizing: border-box;
+    max-width: 1000px;
+    border-radius: 50px;
+    border: 5px solid grey;
+    transition: transform 0.3s, box-shadow 0.3s; /* Ajout de transitions pour une animation fluide */
 }
-.p3 img{
-    width: 100%;
+
+.p3 img:hover {
+    transform: scale(1.05); /* Grossissement de l'image au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au survol */
 }
+
 .p3 p {
-    margin-top: 0px;
+    margin-top: 15px;
     background-color: white;
     width: 100%;
-  }
+    max-width: 1000px;
+    padding: 10px; /* Ajout de padding */
+    box-sizing: border-box; /* Permet d'inclure le padding dans la taille totale */
+    border-radius: 20px;
+    border: 5px solid grey;
+}
+.p3 p:hover {
+    transform: scale(1.05); /* Grossissement de l'image au survol */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au survol */
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -317,6 +364,35 @@ footer {
     align-items: center; /* Ajout de cet alignement */
 }
 
+.social-buttons {
+    text-align: center;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+
+.instagram-button {
+    background-color: #e1306c;
+}
+
+.twitter-button {
+    background-color: #1da1f2;
+}
 
 
 
